@@ -33,7 +33,7 @@
       "optional": true,
       "version": "https://github.com/OS-Q/N20.git"
     },
-    "framework-mbed": {
+    "framework-N2": {
       "type": "framework",
       "optional": true,
       "version": "https://github.com/OS-Q/N2.git"
