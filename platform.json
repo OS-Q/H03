@@ -1,0 +1,62 @@
+{
+  "name": "H3",
+  "title": "H3",
+  "description": "Teensy开发平台",
+  "url": "https://www.pjrc.com/teensy",
+  "homepage": "http://platformio.org/platforms/teensy",
+  "license": "Apache-2.0",
+  "engines": {
+    "platformio": "<5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/platformio/platform-teensy.git"
+  },
+  "version": "1.0.0",
+  "packageRepositories": [
+    "https://dl.bintray.com/platformio/dl-packages/manifest.json",
+    "http://dl.platformio.org/packages/manifest.json"
+  ],
+  "frameworks": {
+    "arduino": {
+      "package": "framework-N20",
+      "script": "builder/frameworks/arduino.py"
+    },
+    "mbed": {
+      "package": "framework-N2",
+      "script": "builder/frameworks/mbed.py"
+    }
+  },
+  "packages": {
+    "framework-N20": {
+      "type": "framework",
+      "optional": true,
+      "version": "https://github.com/OS-Q/N20.git"
+    },
+    "framework-mbed": {
+      "type": "framework",
+      "optional": true,
+      "version": "https://github.com/OS-Q/N2.git"
+    },
+    "toolchain-atmelavr": {
+      "type": "toolchain",
+      "optional": false,
+      "version": "~1.50400.0"
+    },
+    "toolchain-gccarmnoneeabi": {
+      "type": "toolchain",
+      "optional": false,
+      "version": "~1.50401.0"
+    },
+    "tool-teensy": {
+      "type": "uploader",
+      "optional": true,
+      "version": "<2"
+    },
+    "tool-jlink": {
+      "type": "uploader",
+      "optional": true,
+      "version": "^1.63208.0"
+    }
+  }
+}
