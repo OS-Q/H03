@@ -18,7 +18,7 @@ env = DefaultEnvironment()
 platform = env.PioPlatform()
 
 FRAMEWORK_DIR = platform.get_package_dir("framework-N20")
-FRAMEWORK_VERSION = ‘"1.0" #platform.get_package_version("framework-N20")
+FRAMEWORK_VERSION = "1.0" #platform.get_package_version("framework-N20")
 BUILD_CORE = env.BoardConfig().get("build.core")
 
 assert isdir(FRAMEWORK_DIR)
