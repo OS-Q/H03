@@ -16,7 +16,7 @@
   "frameworks": [
     "arduino"
   ],
-  "name": "Engduino 3",
+  "name": "atmega32u4",
   "upload": {
     "disable_flushing": true,
     "maximum_ram_size": 2560,

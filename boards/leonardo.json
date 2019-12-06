@@ -36,7 +36,7 @@
   "frameworks": [
     "arduino"
   ],
-  "name": "Arduino Leonardo",
+  "name": "Leonardo",
   "upload": {
     "disable_flushing": true,
     "maximum_ram_size": 2560,
