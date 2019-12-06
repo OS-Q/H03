@@ -15,15 +15,15 @@ class H3Platform(PlatformBase):
         if "arduino" in variables.get(
                 "pioframework", []) and build_core != "arduino":
 
-            framework_package = "framework-arduino-avr-%s" % build_core.lower()
-            if build_core in ("dtiny", "pro"):
-                framework_package = "framework-arduino-avr-digistump"
-            elif build_core in ("tiny", "tinymodern"):
-                framework_package = "framework-arduino-avr-attiny"
+            framework_package = "framework-N10-%s" % build_core.lower()
+            # if build_core in ("dtiny", "pro"):
+            #     framework_package = "framework-N10-digistump"
+            # elif build_core in ("tiny", "tinymodern"):
+            #     framework_package = "framework-N10-attiny"
 
             self.frameworks["arduino"]["package"] = framework_package
             self.packages[framework_package]["optional"] = False
-            self.packages["framework-arduino-avr"]["optional"] = True
+            self.packages["framework-N10"]["optional"] = True
 
         upload_protocol = variables.get(
             "upload_protocol",

@@ -1,17 +1,3 @@
-# Copyright 2014-present PlatformIO <contact@platformio.org>
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#    http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
 """
 Arduino
 
@@ -31,14 +17,14 @@ platform = env.PioPlatform()
 board = env.BoardConfig()
 build_core = board.get("build.core", "")
 
-FRAMEWORK_DIR = platform.get_package_dir("framework-arduino-avr")
-if build_core in ("dtiny", "pro"):
-    FRAMEWORK_DIR = platform.get_package_dir("framework-arduino-avr-digistump")
-elif build_core in ("tiny", "tinymodern"):
-    FRAMEWORK_DIR = platform.get_package_dir("framework-arduino-avr-attiny")
-elif build_core != "arduino":
-    FRAMEWORK_DIR = platform.get_package_dir(
-        "framework-arduino-avr-%s" % build_core.lower())
+FRAMEWORK_DIR = platform.get_package_dir("framework-N10")
+# if build_core in ("dtiny", "pro"):
+#     FRAMEWORK_DIR = platform.get_package_dir("framework-N10-digistump")
+# elif build_core in ("tiny", "tinymodern"):
+#     FRAMEWORK_DIR = platform.get_package_dir("framework-N10-attiny")
+# elif build_core != "arduino":
+#     FRAMEWORK_DIR = platform.get_package_dir(
+#         "framework-N10-%s" % build_core.lower())
 
 assert isdir(FRAMEWORK_DIR)
 
