@@ -32,6 +32,7 @@
       "script": "builder/frameworks/simba.py"
     }
   },
+  "packages": {
     "framework-arduino-avr": {
       "type": "framework",
       "optional": true,
@@ -52,11 +53,10 @@
       "optional": true,
       "version": ">=7.0.0"
     },
-    "packages": {
-      "toolchain-atmelavr": {
-        "type": "toolchain",
-        "version": "~1.50400.0"
-      },
+    "toolchain-atmelavr": {
+      "type": "toolchain",
+      "version": "~1.50400.0"
+    },
     "tool-avrdude": {
       "type": "uploader",
       "optional": true,
