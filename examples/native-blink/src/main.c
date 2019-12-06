@@ -1,8 +1,3 @@
-/**
- * Copyright (C) PlatformIO <contact@platformio.org>
- * See LICENSE for details.
- */
-
 #include <avr/io.h>
 #include <util/delay.h>
 
