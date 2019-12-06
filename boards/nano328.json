@@ -18,7 +18,7 @@
     "arduino",
     "simba"
   ],
-  "name": "Nano mega328",
+  "name": "Nano328",
   "upload": {
     "maximum_ram_size": 2048,
     "maximum_size": 30720,
@@ -27,5 +27,5 @@
     "speed": 57600
   },
   "url": "https://www.arduino.cc/en/Main/ArduinoBoardNano",
-  "vendor": "Arduino"
+  "vendor": "OS-Q"
 }

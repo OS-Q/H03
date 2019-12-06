@@ -20,7 +20,7 @@
   "frameworks": [
     "arduino"
   ],
-  "name": "Arduino Ethernet",
+  "name": "Ethernet",
   "upload": {
     "maximum_ram_size": 2048,
     "maximum_size": 32256,
@@ -29,5 +29,5 @@
     "speed": 115200
   },
   "url": "https://www.arduino.cc/en/Main/ArduinoBoardEthernet",
-  "vendor": "Arduino"
+  "vendor": "OS-Q"
 }

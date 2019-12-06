@@ -34,7 +34,8 @@
     "unlock_bits": "0x3F"
   },
   "frameworks": [
-    "arduino"
+    "arduino",
+    "simba"
   ],
   "name": "Arduino Esplora",
   "upload": {
@@ -48,5 +49,5 @@
     "wait_for_upload_port": true
   },
   "url": "https://www.arduino.cc/en/Main/ArduinoBoardEsplora",
-  "vendor": "Arduino"
+  "vendor": "OS-Q"
 }

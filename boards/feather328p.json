@@ -13,10 +13,19 @@
     "usb_product": "Feather 328P",
     "variant": "standard"
   },
+  "bootloader": {
+    "efuse": "0xFD", 
+    "file": "atmega/ATmegaBOOT_168_atmega328.hex", 
+    "hfuse": "0xDA", 
+    "lock_bits": "0x0F", 
+    "lfuse": "0xFF", 
+    "unlock_bits": "0x3F"
+  },
   "frameworks": [
-    "arduino"
+    "arduino",
+    "simba"
   ],
-  "name": "Adafruit Feather 328P",
+  "name": "Feather 328P",
   "upload": {
     "maximum_ram_size": 2048,
     "maximum_size": 32256,
@@ -25,5 +34,5 @@
     "speed": 57600
   },
   "url": "https://www.adafruit.com/product/3458",
-  "vendor": "Adafruit"
+  "vendor": "OS-Q"
 }

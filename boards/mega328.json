@@ -15,9 +15,10 @@
     "unlock_bits": "0x3F"
   },
   "frameworks": [
-    "arduino"
+    "arduino",
+    "simba"
   ],
-  "name": "Pro Mini ATmega328 (5V, 16 MHz)",
+  "name": "Pro Mini mega328 (5V, 16 MHz)",
   "upload": {
     "maximum_ram_size": 2048,
     "maximum_size": 30720,
@@ -26,5 +27,5 @@
     "speed": 57600
   },
   "url": "http://arduino.cc/en/Main/ArduinoBoardProMini",
-  "vendor": "Arduino"
+  "vendor": "OS-Q"
 }

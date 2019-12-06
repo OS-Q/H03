@@ -1,31 +1,47 @@
 {
   "build": {
     "core": "arduino",
-    "extra_flags": "-DARDUINO_AVR_FEATHER32U4",
-    "f_cpu": "8000000L",
+    "extra_flags": "-DARDUINO_AVR_YUN",
+    "f_cpu": "16000000L",
     "hwids": [
       [
-        "0x239A",
-        "0x800C"
+        "0x2341",
+        "0x0041"
+      ],
+      [
+        "0x2341",
+        "0x8041"
+      ],
+      [
+        "0x2A03",
+        "0x0041"
+      ],
+      [
+        "0x2A03",
+        "0x8041"
       ]
     ],
     "mcu": "atmega32u4",
-    "usb_product": "Feather 32u4",
-    "variant": "feather32u4"
+    "usb_product": "Arduino Yun",
+    "variant": "yun"
   },
   "bootloader": {
-    "efuse": "0xCB", 
-    "file": "caterina/Caterina-Feather32u4.hex", 
+    "efuse": "0xFB", 
+    "file": "caterina/Caterina-Yun.hex", 
     "hfuse": "0xD8", 
     "lock_bits": "0x2F", 
     "lfuse": "0xFF", 
     "unlock_bits": "0x3F"
   },
+  "connectivity": [
+    "ethernet",
+    "wifi"
+  ],
   "frameworks": [
     "arduino",
     "simba"
   ],
-  "name": "Adafruit Feather 32u4",
+  "name": "Yun",
   "upload": {
     "disable_flushing": true,
     "maximum_ram_size": 2560,
@@ -34,8 +50,9 @@
     "require_upload_port": true,
     "speed": 57600,
     "use_1200bps_touch": true,
+    "via_ssh": true,
     "wait_for_upload_port": true
   },
-  "url": "https://learn.adafruit.com/adafruit-feather-32u4-bluefruit-le/",
+  "url": "https://www.arduino.cc/en/Main/ArduinoBoardYun",
   "vendor": "OS-Q"
 }
