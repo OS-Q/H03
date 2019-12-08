@@ -5,7 +5,7 @@ class H03Platform(PlatformBase):
 
     def configure_default_packages(self, variables, targets):
         if not variables.get("board"):
-            return super(H3Platform, self).configure_default_packages(
+            return super(H03Platform, self).configure_default_packages(
                 variables, targets)
 
         build_core = variables.get(
@@ -16,10 +16,10 @@ class H03Platform(PlatformBase):
                 "pioframework", []) and build_core != "arduino":
 
             framework_package = "framework-avr-%s" % build_core.lower()
-            # if build_core in ("dtiny", "pro"):
-            #     framework_package = "framework-avr-digistump"
-            # elif build_core in ("tiny", "tinymodern"):
-            #     framework_package = "framework-avr-attiny"
+            if build_core in ("dtiny", "pro"):
+                framework_package = "framework-avr-digistump"
+            elif build_core in ("tiny", "tinymodern"):
+                framework_package = "framework-avr-attiny"
 
             self.frameworks["arduino"]["package"] = framework_package
             self.packages[framework_package]["optional"] = False
@@ -44,7 +44,7 @@ class H03Platform(PlatformBase):
         if disabled_tool in self.packages and disabled_tool != required_tool:
             del self.packages[disabled_tool]
 
-        return super(H3Platform, self).configure_default_packages(
+        return super(H03Platform, self).configure_default_packages(
             variables, targets)
 
     def on_run_err(self, line):  # pylint: disable=R0201
