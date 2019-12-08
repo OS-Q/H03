@@ -9,7 +9,6 @@ int main(void)
     while (1)
     {
         _delay_ms(500);
-
         // toggle the LED
         PORTB ^= 1 << 5;
     }

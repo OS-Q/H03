@@ -1,7 +1,7 @@
 from platformio.managers.platform import PlatformBase
 
 
-class H3Platform(PlatformBase):
+class H03Platform(PlatformBase):
 
     def configure_default_packages(self, variables, targets):
         if not variables.get("board"):
@@ -15,15 +15,15 @@ class H3Platform(PlatformBase):
         if "arduino" in variables.get(
                 "pioframework", []) and build_core != "arduino":
 
-            framework_package = "framework-N10-%s" % build_core.lower()
+            framework_package = "framework-avr-%s" % build_core.lower()
             # if build_core in ("dtiny", "pro"):
-            #     framework_package = "framework-N10-digistump"
+            #     framework_package = "framework-avr-digistump"
             # elif build_core in ("tiny", "tinymodern"):
-            #     framework_package = "framework-N10-attiny"
+            #     framework_package = "framework-avr-attiny"
 
             self.frameworks["arduino"]["package"] = framework_package
             self.packages[framework_package]["optional"] = False
-            self.packages["framework-N10"]["optional"] = True
+            self.packages["framework-N21"]["optional"] = True
 
         upload_protocol = variables.get(
             "upload_protocol",
