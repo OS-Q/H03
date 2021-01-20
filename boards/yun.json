@@ -26,22 +26,24 @@
     "variant": "yun"
   },
   "bootloader": {
-    "efuse": "0xFB", 
-    "file": "caterina/Caterina-Yun.hex", 
-    "hfuse": "0xD8", 
-    "lock_bits": "0x2F", 
-    "lfuse": "0xFF", 
+    "efuse": "0xFB",
+    "file": "caterina/Caterina-Yun.hex",
+    "hfuse": "0xD8",
+    "lock_bits": "0x2F",
+    "lfuse": "0xFF",
     "unlock_bits": "0x3F"
   },
   "connectivity": [
     "ethernet",
     "wifi"
   ],
+  "debug": {
+    "simavr_target": "atmega32u4"
+  },
   "frameworks": [
-    "arduino",
-    "simba"
+    "arduino"
   ],
-  "name": "Yun",
+  "name": "Arduino Yun",
   "upload": {
     "disable_flushing": true,
     "maximum_ram_size": 2560,
@@ -54,5 +56,5 @@
     "wait_for_upload_port": true
   },
   "url": "https://www.arduino.cc/en/Main/ArduinoBoardYun",
-  "vendor": "OS-Q"
+  "vendor": "Arduino"
 }

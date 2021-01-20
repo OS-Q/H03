@@ -25,18 +25,24 @@
     "variant": "standard"
   },
   "bootloader": {
-    "efuse": "0xFD", 
-    "file": "optiboot/optiboot_atmega328.hex", 
-    "hfuse": "0xDE", 
-    "lock_bits": "0x0F", 
-    "lfuse": "0xFF", 
+    "efuse": "0xFD",
+    "file": "optiboot/optiboot_atmega328.hex",
+    "hfuse": "0xDE",
+    "lock_bits": "0x0F",
+    "lfuse": "0xFF",
     "unlock_bits": "0x3F"
+  },
+  "debug": {
+    "simavr_target": "atmega328p",
+    "avr-stub": {
+      "speed": 115200
+    }
   },
   "frameworks": [
     "arduino",
     "simba"
   ],
-  "name": "uno",
+  "name": "Arduino Uno",
   "upload": {
     "maximum_ram_size": 2048,
     "maximum_size": 32256,
@@ -45,5 +51,5 @@
     "speed": 115200
   },
   "url": "https://www.arduino.cc/en/Main/ArduinoBoardUno",
-  "vendor": "OS-Q"
+  "vendor": "Arduino"
 }

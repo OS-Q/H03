@@ -26,17 +26,20 @@
     "variant": "leonardo"
   },
   "bootloader": {
-    "efuse": "0xCB", 
-    "file": "caterina/Caterina-Leonardo.hex", 
-    "hfuse": "0xD8", 
-    "lock_bits": "0x2F", 
-    "lfuse": "0xFF", 
+    "efuse": "0xCB",
+    "file": "caterina/Caterina-Leonardo.hex",
+    "hfuse": "0xD8",
+    "lock_bits": "0x2F",
+    "lfuse": "0xFF",
     "unlock_bits": "0x3F"
+  },
+  "debug": {
+    "simavr_target": "atmega32u4"
   },
   "frameworks": [
     "arduino"
   ],
-  "name": "Leonardo",
+  "name": "Arduino Leonardo",
   "upload": {
     "disable_flushing": true,
     "maximum_ram_size": 2560,
@@ -48,5 +51,5 @@
     "wait_for_upload_port": true
   },
   "url": "https://www.arduino.cc/en/Main/ArduinoBoardLeonardo",
-  "vendor": "OS-Q"
+  "vendor": "Arduino"
 }
