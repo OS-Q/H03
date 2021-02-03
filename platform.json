@@ -1,24 +1,24 @@
 {
   "name": "P11",
   "title": "Platform P11",
-  "description": "Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming",
+  "description": "Atmel AVR 8-bit MCUs Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming",
   "homepage": "http://www.atmel.com/products/microcontrollers/avr/default.aspx",
   "license": "Apache-2.0",
   "version": "3.1.0",
   "keywords": [
-    "OS-Q",
-    "dev-platform",
-    "Microchip",
-    "AVR",
-    "Atmel",
-    "8-bit"
+      "OS-Q",
+      "dev-platform",
+      "Microchip",
+      "AVR",
+      "Atmel",
+      "8-bit"
   ],
   "engines": {
     "platformio": "^5"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/platformio/platform-atmelavr.git"
+    "url": "https://github.com/OS-Q/P11.git"
   },
   "frameworks": {
     "arduino": {
@@ -82,7 +82,7 @@
       "type": "framework",
       "optional": true,
       "owner": "platformio",
-      "version": "~2.0.6"
+      "version": "~2.0.8"
     },
     "framework-arduino-avr-minicore": {
       "type": "framework",
