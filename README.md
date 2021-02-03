@@ -1,8 +1,8 @@
-﻿# [Platform P07](https://github.com/OS-Q/P07)
+﻿# [Platform P11](https://github.com/OS-Q/P11)
 
 [![sites](http://182.61.61.133/link/resources/OSQ.png)](http://www.OS-Q.com)
-### [简介](https://github.com/OS-Q/P07/wiki)
+### [简介](https://github.com/OS-Q/P11/wiki)
 
-[Platform P07](https://github.com/OS-Q/P07)基于[PlatformIO](https://github.com/platformio/platformio-core) 框架
+[Platform P11](https://github.com/OS-Q/P11)基于[PlatformIO](https://github.com/platformio/platformio-core) 框架
 
 ### [Q = (OpenSource & OperatingSystem) ](http://www.OS-Q.com)

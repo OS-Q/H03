@@ -1,7 +1,6 @@
 from platformio.managers.platform import PlatformBase
 
-
-class P07Platform(PlatformBase):
+class P11Platform(PlatformBase):
 
     def configure_default_packages(self, variables, targets):
         if not variables.get("board"):

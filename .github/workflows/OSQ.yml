@@ -1,4 +1,4 @@
-name: P07
+name: P11
 
 on: [push, pull_request]
 
@@ -8,7 +8,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
-        python-version: [3.8]
+        python-version: [3.7]
         example:
           - "examples/arduino-blink"
           - "examples/arduino-external-libs"
