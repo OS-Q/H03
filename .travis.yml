@@ -5,6 +5,10 @@ python:
 env:
   - PLATFORMIO_PROJECT_DIR=examples/arduino-blink
   - PLATFORMIO_PROJECT_DIR=examples/arduino-external-libs
+  - PLATFORMIO_PROJECT_DIR=examples/arduino-internal-libs
+  - PLATFORMIO_PROJECT_DIR=examples/arduino-own-src_dir
+  - PLATFORMIO_PROJECT_DIR=examples/native-blink
+  - PLATFORMIO_PROJECT_DIR=examples/simba-blink
 
 install:
   - pip install -U https://github.com/OS-Q/S03/archive/master.zip

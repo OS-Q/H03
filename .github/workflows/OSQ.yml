@@ -14,8 +14,6 @@ jobs:
           - "examples/arduino-external-libs"
           - "examples/arduino-internal-libs"
           - "examples/arduino-own-src_dir"
-          - "examples/digitstump-mouse"
-          - "examples/engduino-magnetometer"
           - "examples/native-blink"
           - "examples/simba-blink"
 

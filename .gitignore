@@ -1,2 +1,6 @@
 *.pyc
 .piolibdeps
+*.pyc
+__pycache__
+*.pio/
+*.vscode/
