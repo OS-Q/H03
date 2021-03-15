@@ -1,12 +1,10 @@
 {
   "name": "P11",
-  "title": "Platform P11",
-  "description": "Atmel AVR 8-bit MCUs Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming",
+  "title": "Platform P11 (AVR)",
+  "description": "Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming",
   "homepage": "http://www.atmel.com/products/microcontrollers/avr/default.aspx",
   "license": "Apache-2.0",
-  "version": "3.1.0",
   "keywords": [
-      "OS-Q",
       "dev-platform",
       "Microchip",
       "AVR",
@@ -20,6 +18,7 @@
     "type": "git",
     "url": "https://github.com/OS-Q/P11.git"
   },
+  "version": "3.2.0",
   "frameworks": {
     "arduino": {
       "package": "framework-arduino-avr",
@@ -34,7 +33,7 @@
     "toolchain-atmelavr": {
       "type": "toolchain",
       "owner": "platformio",
-      "version": "~1.50400.0"
+      "version": "~1.70300.0"
     },
     "framework-arduino-avr": {
       "type": "framework",
@@ -64,7 +63,7 @@
       "type": "framework",
       "optional": true,
       "owner": "platformio",
-      "version": "~1.6.7"
+      "version": "~1.7.2"
     },
     "framework-arduino-avr-dwenguino": {
       "type": "framework",
@@ -76,31 +75,31 @@
       "type": "framework",
       "optional": true,
       "owner": "platformio",
-      "version": "~2.0.4"
+      "version": "~2.1.0"
     },
     "framework-arduino-avr-mightycore": {
       "type": "framework",
       "optional": true,
       "owner": "platformio",
-      "version": "~2.0.8"
+      "version": "~2.1.0"
     },
     "framework-arduino-avr-minicore": {
       "type": "framework",
       "optional": true,
       "owner": "platformio",
-      "version": "~2.0.7"
+      "version": "~2.1.0"
     },
     "framework-arduino-avr-majorcore": {
       "type": "framework",
       "optional": true,
       "owner": "platformio",
-      "version": "~2.0.3"
+      "version": "~2.1.0"
     },
     "framework-arduino-avr-microcore": {
       "type": "framework",
       "optional": true,
       "owner": "platformio",
-      "version": "~2.0.0"
+      "version": "~2.0.3"
     },
     "framework-arduino-avr-nicai": {
       "type": "framework",
@@ -136,7 +135,7 @@
       "type": "uploader",
       "optional": true,
       "owner": "platformio",
-      "version": "~1.200.0"
+      "version": "~1.250.0"
     },
     "tool-simavr": {
       "type": "debugger",
