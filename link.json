@@ -25,8 +25,8 @@
       "script": "builder/arduino.py"
     },
     "simba": {
-      "package": "framework-simba",
-      "script": "builder/frameworks/simba.py"
+      "package": "simba",
+      "script": "builder/simba.py"
     }
   },
   "packages": {
@@ -40,11 +40,10 @@
       "optional": true,
       "version": "https://github.com/OS-Q/A11A.git"
     },
-    "framework-simba": {
+    "simba": {
       "type": "framework",
       "optional": true,
-      "owner": "platformio",
-      "version": ">=7.0.0"
+      "version": "https://github.com/OS-Q/simba.git"
     },
     "tool-avrdude": {
       "type": "uploader",
