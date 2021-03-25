@@ -15,7 +15,7 @@ def get_bootloader_size():
     max_size = board.get("upload.maximum_size")
     if max_size > 4096 and max_size <= 32768:
         return 512
-    elif max_size >= 65536 or board.get("build.mcu").startswith("at90can32"):
+    elif max_size >= 65536:
         return 1024
     return 0
 
@@ -80,29 +80,6 @@ env.Append(
         join(FRAMEWORK_DIR, "cores", build_core)
     ]
 )
-
-#
-# Take into account bootloader size
-#
-
-if (
-    build_core in ("MiniCore", "MegaCore", "MightyCore", "MajorCore")
-    and board.get("hardware.uart", "uart0") != "no_bootloader"
-):
-    upload_section = board.get("upload")
-    upload_section["maximum_size"] -= board.get(
-        "bootloader.size", get_bootloader_size()
-    )
-elif build_core in ("tiny", "tinymodern"):
-    flatten_defines = env.Flatten(env["CPPDEFINES"])
-    extra_defines = []
-    if "CLOCK_SOURCE" not in flatten_defines:
-        extra_defines.append(("CLOCK_SOURCE", 0))
-    if "NEOPIXELPORT" not in flatten_defines:
-        extra_defines.append(("NEOPIXELPORT", "PORTA"))
-
-    if extra_defines:
-        env.AppendUnique(CPPDEFINES=extra_defines)
 
 # copy CCFLAGS to ASFLAGS (-x assembler-with-cpp mode)
 env.Append(ASFLAGS=env.get("CCFLAGS", [])[:])

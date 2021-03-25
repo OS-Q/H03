@@ -30,11 +30,6 @@
     }
   },
   "packages": {
-    "toolchain-atmelavr": {
-      "type": "toolchain",
-      "owner": "platformio",
-      "version": "~1.70300.0"
-    },
     "A11A": {
       "type": "framework",
       "optional": true,
@@ -44,6 +39,11 @@
       "type": "framework",
       "optional": true,
       "version": "https://github.com/OS-Q/simba.git"
+    },
+    "toolchain-atmelavr": {
+      "type": "toolchain",
+      "owner": "platformio",
+      "version": "~1.70300.0"
     },
     "tool-avrdude": {
       "type": "uploader",
