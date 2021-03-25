@@ -1,0 +1,14 @@
+kind: pipeline
+name: default
+
+steps:
+- name: P11
+  image: python:3
+  commands:
+  - apt update
+  - apt install -y git
+  - git submodule update --init --recursive
+  - pip install -U https://github.com/OS-Q/S03/archive/master.zip
+  - qio platform install file://.
+  - qio run -d examples/simba-blink
+  - qio run -d examples/arduino-blink
