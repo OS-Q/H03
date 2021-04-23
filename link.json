@@ -21,7 +21,7 @@
   "version": "3.2.0",
   "frameworks": {
     "arduino": {
-      "package": "A11A",
+      "package": "A11",
       "script": "extend/arduino.py"
     },
     "simba": {
@@ -30,10 +30,10 @@
     }
   },
   "packages": {
-    "A11A": {
+    "A11": {
       "type": "framework",
       "optional": true,
-      "version": "https://github.com/OS-Q/A11A.git"
+      "version": "https://github.com/OS-Q/A11.git"
     },
     "simba": {
       "type": "framework",
