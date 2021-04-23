@@ -134,7 +134,7 @@ if env.get("PROGNAME", "program") == "program":
     env.Replace(PROGNAME="firmware")
 
 if not env.get("PIOFRAMEWORK"):
-    env.SConscript("frameworks/_bare.py", exports="env")
+    env.SConscript("_bare.py", exports="env")
 
 #
 # Target: Build executable and linkable firmware
