@@ -21,6 +21,7 @@ jobs:
           - "arduino-internal-libs"
           - "arduino-own-src_dir"
           - "simba-blink"
+          - "native-blink"
 
     steps:
       - uses: actions/checkout@v2
@@ -101,7 +102,7 @@ jobs:
       - name: Package
         id: package
         run: |
-          echo "Platform P11 for ESP32 SoC" >> log.txt
+          echo "Platform P11 for AVR MCU" >> log.txt
           echo $(date +"%Y.%m.%d") >> log.txt
           echo ${GITHUB_REF/refs\/tags\//} >> log.txt
           echo "www.OS-Q.com\n" >> log.txt

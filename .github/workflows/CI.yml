@@ -63,6 +63,7 @@ jobs:
           - "arduino-internal-libs"
           - "arduino-own-src_dir"
           - "simba-blink"
+          - "native-blink"
 
         os: [ubuntu-latest, windows-latest, macos-latest]
 
@@ -144,6 +145,7 @@ jobs:
           - "arduino-internal-libs"
           - "arduino-own-src_dir"
           - "simba-blink"
+          - "native-blink"
 
         os: [ubuntu-latest, windows-latest, macos-latest]
 

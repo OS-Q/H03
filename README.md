@@ -1,4 +1,4 @@
-﻿# [P11](https://github.com/OS-Q/P11)
+﻿# [Platform AVR](https://github.com/OS-Q/P11)
 
 [![sites](http://182.61.61.133/link/resources/OSQ.png)](http://www.OS-Q.com)
 

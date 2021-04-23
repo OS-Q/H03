@@ -26,6 +26,7 @@ jobs:
             qio run -d examples/arduino-internal-libs
             qio run -d examples/arduino-own-src_dir
             qio run -d examples/simba-blink
+            qio run -d examples/native-blink
 
   PIO:
     docker:
@@ -52,10 +53,12 @@ jobs:
             pio run -d examples/arduino-internal-libs
             pio run -d examples/arduino-own-src_dir
             pio run -d examples/simba-blink
+            pio run -d examples/native-blink
 
 workflows:
     version: 2
     run_ci:
         jobs:
-          - PIO
           - QIO
+          - PIO
+
