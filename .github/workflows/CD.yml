@@ -105,7 +105,7 @@ jobs:
           echo "Platform P11 for AVR MCU" >> log.txt
           echo $(date +"%Y.%m.%d") >> log.txt
           echo ${GITHUB_REF/refs\/tags\//} >> log.txt
-          echo "www.OS-Q.com\n" >> log.txt
+          echo -e "www.OS-Q.com\n" >> log.txt
           git log --stat -1 >> log.txt
           echo ${GITHUB_REF/refs\/tags\//} >> qio/mail.md
           echo $(date +"%Y.%m.%d") >> qio/mail.md
