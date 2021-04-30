@@ -32,8 +32,7 @@
     "simavr_target": "atmega32u4"
   },
   "frameworks": [
-    "arduino",
-    "simba"
+    "arduino"
   ],
   "name": "Arduino Yun Mini",
   "upload": {

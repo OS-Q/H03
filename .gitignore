@@ -1,15 +1,15 @@
-*.db
 *.pyc
-__pycache__/
-*.vscode/
-*.pio/
+.piolibdeps
+.pio
+__pycache__
+*.vscode
 *.rst
-# *.md
-**/README*
 LICENSE*
 *.png
 *.jpg
 examples/**/*.yml
 examples/**/*.md
-**/CONTR*
+**/CONTRI*
 **/CHANGE*
+.gitmodules
+README
