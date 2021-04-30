@@ -1,15 +1,15 @@
-name: PIO
+name: QIO
 
 on:
   push:
     branches:
-      - pio
+      - qio
     paths:
       - 'boards/**'
-      - 'builder/**'
+      - 'extend/**'
       - 'examples/**'
-      - 'platform.json'
-      - 'platform.py'
+      - '**.json'
+      - '**.py'
 
 jobs:
   CodeCheck:
@@ -47,7 +47,7 @@ jobs:
         name: code_check_report
         path: codecheck.txt
 
-  PIO:
+  QIO:
     strategy:
       fail-fast: false
       matrix:
@@ -60,7 +60,6 @@ jobs:
           - "native-blink"
           - "digitstump-mouse"
           - "engduino-magnetometer"
-
         os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
@@ -77,10 +76,11 @@ jobs:
       - name: Install
         run: |
           python -m pip install --upgrade pip
-          pip install -U https://github.com/platformio/platformio/archive/develop.zip
-          pio platform install file://.
+          pip install -U https://github.com/OS-Q/M03/releases/latest/download/qio.zip
+          qio platform install file://.
 
       - name: Build examples
         working-directory: examples
         run: |
-          pio run -d ${{ matrix.example }}
+          qio run -d ${{ matrix.example }}
+

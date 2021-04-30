@@ -22,11 +22,11 @@
   "frameworks": {
     "arduino": {
       "package": "framework-arduino-avr",
-      "script": "builder/frameworks/arduino.py"
+      "script": "extend/frameworks/arduino.py"
     },
     "simba": {
       "package": "framework-simba",
-      "script": "builder/frameworks/simba.py"
+      "script": "extend/frameworks/simba.py"
     }
   },
   "packages": {
