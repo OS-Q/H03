@@ -1,6 +1,6 @@
 {
-  "name": "P11",
-  "title": "Platform Atmel AVR MCU",
+  "name": "P111",
+  "title": "Atmel AVR",
   "description": "Atmel AVR 8-bit MCUs deliver a unique combination of performance, power efficiency and design flexibility. Optimized to speed time to market-and easily adapt to new ones-they are based on the industry's most code-efficient architecture for C and assembly programming",
   "homepage": "http://www.atmel.com/products/microcontrollers/avr/default.aspx",
   "license": "Apache-2.0",
@@ -40,84 +40,6 @@
       "optional": true,
       "owner": "platformio",
       "version": "~5.1.0"
-    },
-    "framework-arduino-avr-attiny": {
-      "type": "framework",
-      "optional": true,
-      "owner": "platformio",
-      "version": "~1.5.2"
-    },
-    "framework-arduino-avr-bean": {
-      "type": "framework",
-      "optional": true,
-      "owner": "platformio",
-      "version": "~2.0.3"
-    },
-    "framework-arduino-avr-core13": {
-      "type": "framework",
-      "optional": true,
-      "owner": "platformio",
-      "version": "~0.0.22"
-    },
-    "framework-arduino-avr-digistump": {
-      "type": "framework",
-      "optional": true,
-      "owner": "platformio",
-      "version": "~1.7.2"
-    },
-    "framework-arduino-avr-dwenguino": {
-      "type": "framework",
-      "optional": true,
-      "owner": "platformio",
-      "version": "~2.2.1"
-    },
-    "framework-arduino-avr-megacore": {
-      "type": "framework",
-      "optional": true,
-      "owner": "platformio",
-      "version": "~2.1.0"
-    },
-    "framework-arduino-avr-mightycore": {
-      "type": "framework",
-      "optional": true,
-      "owner": "platformio",
-      "version": "~2.1.0"
-    },
-    "framework-arduino-avr-minicore": {
-      "type": "framework",
-      "optional": true,
-      "owner": "platformio",
-      "version": "~2.1.0"
-    },
-    "framework-arduino-avr-majorcore": {
-      "type": "framework",
-      "optional": true,
-      "owner": "platformio",
-      "version": "~2.1.0"
-    },
-    "framework-arduino-avr-microcore": {
-      "type": "framework",
-      "optional": true,
-      "owner": "platformio",
-      "version": "~2.0.3"
-    },
-    "framework-arduino-avr-nicai": {
-      "type": "framework",
-      "optional": true,
-      "owner": "platformio",
-      "version": "~3.5.0"
-    },
-    "framework-arduino-avr-panstamp": {
-      "type": "framework",
-      "optional": true,
-      "owner": "platformio",
-      "version": "~1.5.7"
-    },
-    "framework-arduino-avr-prusa_rambo": {
-      "type": "framework",
-      "optional": true,
-      "owner": "platformio",
-      "version": "~1.0.3"
     },
     "framework-simba": {
       "type": "framework",

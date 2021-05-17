@@ -15,8 +15,6 @@ steps:
   - pio run -d examples/arduino-internal-libs
   - pio run -d examples/native-blink
   - pio run -d examples/simba-blink
-  - pio run -d examples/digitstump-mouse
-  - pio run -d examples/engduino-magnetometer
   - pio run -d examples/arduino-own-src_dir
 
 
@@ -33,6 +31,4 @@ steps:
   - pio run -d examples/arduino-internal-libs
   - pio run -d examples/native-blink
   - pio run -d examples/simba-blink
-  - pio run -d examples/digitstump-mouse
-  - pio run -d examples/engduino-magnetometer
   - pio run -d examples/arduino-own-src_dir

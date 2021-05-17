@@ -59,8 +59,6 @@ jobs:
           - "arduino-own-src_dir"
           - "simba-blink"
           - "native-blink"
-          - "digitstump-mouse"
-          - "engduino-magnetometer"
         package: ["pio","qio"]
         os: [ubuntu-latest, windows-latest, macos-latest]
 

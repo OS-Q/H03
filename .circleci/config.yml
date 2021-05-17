@@ -24,8 +24,6 @@ jobs:
             pio run -d examples/arduino-own-src_dir
             pio run -d examples/simba-blink
             pio run -d examples/native-blink
-            pio run -d examples/digitstump-mouse
-            pio run -d examples/engduino-magnetometer
 
   PIO:
     docker:
@@ -40,7 +38,7 @@ jobs:
             git submodule update --init --recursive
             python -m pip install --upgrade pip
             pip install -U https://github.com/platformio/platformio/archive/develop.zip
-            pio platform install https://github.com/OS-Q/P111/archive/pio.zip
+            pio platform install file://.
       - run:
           name: "Build"
           command: |
@@ -50,6 +48,7 @@ jobs:
             pio run -d examples/arduino-own-src_dir
             pio run -d examples/simba-blink
             pio run -d examples/native-blink
+
 workflows:
     version: 2
     run_ci:
