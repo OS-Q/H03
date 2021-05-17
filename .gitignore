@@ -12,4 +12,4 @@ examples/**/*.md
 **/CONTRI*
 **/CHANGE*
 .gitmodules
-README
+README*
