@@ -16,7 +16,7 @@ class P111Platform(PlatformBase):
                 "pioframework", []) and build_core != "arduino":
             self.frameworks["arduino"]["package"] = framework_package
             self.packages[framework_package]["optional"] = False
-            self.packages["framework-arduino-avr"]["optional"] = True
+            self.packages["A111"]["optional"] = True
 
         upload_protocol = variables.get(
             "upload_protocol",

@@ -10,7 +10,7 @@
 ### [简介](https://github.com/OS-Q/P111/wiki)
 
 
-[P111](https://github.com/OS-Q/P111) 框架用于动态适配平台芯片，统一底层调用框架接口。
+[P111](https://github.com/OS-Q/P111)
 
 
 ### [源圈 OS-Q (Open Source & QA) ](http://www.OS-Q.com)
