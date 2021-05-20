@@ -30,7 +30,7 @@ env.AddMethod(VariantDirWrap)
 env.Append(CPPDEFINES=[("F_CPU", "$BOARD_F_CPU")])
 
 env.Replace(
-    PLATFORMFW_DIR=env.PioPlatform().get_package_dir("framework-simba")
+    PLATFORMFW_DIR=env.PioPlatform().get_package_dir("simba")
 )
 
 SConscript(
